@@ -1,0 +1,95 @@
+body {
+  background: #121213;
+  color: white;
+  font-family: sans-serif;
+  text-align: center;
+}
+
+h1 {
+  margin: 20px 0;
+}
+
+#board {
+  display: grid;
+  gap: 8px;
+  justify-content: center;
+  margin: 20px;
+}
+
+.row {
+  display: flex;
+  gap: 8px;
+}
+
+.cell {
+  width: 60px;
+  height: 60px;
+  border: 2px solid #3a3a3c;
+  background: #121213;
+  perspective: 1000px;
+}
+
+.inner {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+
+  transition: transform 0.4s;
+  transform-style: preserve-3d;
+}
+
+.cell.flip .inner {
+  transform: rotateX(180deg);
+}
+
+.inner span {
+  backface-visibility: hidden;
+}
+
+.cell.flip .inner span {
+  transform: rotateX(180deg);
+}
+
+/* botões */
+#columnButtons {
+  margin: 20px;
+}
+
+.col-btn {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  margin: 4px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.badge {
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  background: #538d4e;
+  color: white;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#confirm {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+#currentMove {
+  margin-top: 10px;
+  font-size: 18px;
+  color: #ccc;
+}
