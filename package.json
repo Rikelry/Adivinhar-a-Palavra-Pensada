@@ -1,0 +1,23 @@
+{
+  "name": "adivinhar-a-palavra-pensada",
+  "version": "1.0.0",
+  "description": "## 1. Estrutura inicial",
+  "scripts": {
+    "start": "parcel source/index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Rikelry/Adivinhar-a-Palavra-Pensada.git"
+  },
+  "keywords": [],
+  "author": "Rikelry",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Rikelry/Adivinhar-a-Palavra-Pensada/issues"
+  },
+  "homepage": "https://github.com/Rikelry/Adivinhar-a-Palavra-Pensada#readme",
+  "devDependencies": {
+    "parcel": "^2.16.4",
+    "typescript": "^6.0.3"
+  }
+}
